@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #8e44ad, #3498db);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  header p {
+    font-size: 1rem;
+    margin-top: 8px;
+    color: #dcdcdc;
+  }
+  
+  main {
+    width: 100%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  .settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .settings label,
+  .settings select {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  
+  .settings select {
+    padding: 5px 10px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #531111;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .settings select:hover,
+  .settings select:focus {
+    border-color: #ffeb3b;
+  }
+  
+  .game {
+    margin-bottom: 20px;
+  }
+  
+  #text-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border: 2px dashed #ffffff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  #text-to-type {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #200505;
+  }
+  
+  #user-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background: rgba(227, 189, 189, 0.1);
+    color: #ffffff;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  #user-input:focus {
+    border-color: #3498db;
+  }
+  
+  .feedback {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+  }
+  
+  .feedback span {
+    font-weight: bold;
+    color: #ffeb3b;
+  }
+  
+  /* Themes */
+  body.dark {
+    background: linear-gradient(120deg, #1e1e2f, #2c3e50);
+    color: #f5f5f5;
+  }
+  
+  body.dark #text-container {
+    background: rgba(0, 0, 0, 0.1);
+    border-color: #bdc3c7;
+  }
+  
+  body.fun {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: #ffffff;
+  }
+  
+  body.fun #text-container {
+    background: rgba(28, 23, 23, 0.2);
+    border-color: #ff91a7;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #dcdcdc;
+  }
+  
